@@ -1,0 +1,8 @@
+Changelog
+=========
+
+1.0dev (unreleased)
+-------------------
+- change site title and description [gil]
+
+- Initial release
