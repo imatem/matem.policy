@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="matem.policy">
+
+  <browser:page
+    name="matem"
+    for="Products.ATContentTypes.content.newsitem.ATNewsItem"
+    permission="zope.Public"
+    template="newsitem.pt"
+    class=".views.NewsSummaryView"
+    layer="Products.Collage.interfaces.ICollageBrowserLayer"
+    />
+
+</configure>

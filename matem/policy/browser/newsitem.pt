@@ -1,0 +1,4 @@
+<tal:manager
+    replace="structure provider:collage.ContentManager" />
+
+<H1>Title</H1>
