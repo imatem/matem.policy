@@ -1,7 +1,8 @@
 import unittest
-from matem.policy.tests.base import MatemPolicyTestCase
+from matem.policy.tests.base import TestCase
 
-class TestSetup(MatemPolicyTestCase):
+
+class TestSetup(TestCase):
 
     def test_portal_title(self):
         self.assertEquals("Institute of Mathematics",
@@ -10,6 +11,7 @@ class TestSetup(MatemPolicyTestCase):
     def test_portal_description(self):
         self.assertEquals("Welcome to Institute of Mathematics",
             self.portal.getProperty('description'))
+
 
 def test_suite():
     suite = unittest.TestSuite()
