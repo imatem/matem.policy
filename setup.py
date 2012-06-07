@@ -25,7 +25,7 @@ setup(name='matem.policy',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'Plone',
+          'Products.Collage',
       ],
       entry_points="""
       [z3c.autoinclude.plugin]
