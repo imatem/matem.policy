@@ -19,15 +19,16 @@ def setup_matem_policy():
 
     # We need to tell the testing framework that these product should be
     # available. This can't happen until after we have loaded the ZCML.
+    # This is *only* necessary for packages outside the Products.*
+    # namespace which are also declared as Zope 2 products, using
+    # <five:registerPackage /> in ZCML.
     ztc.installProduct('Collage')
-    ztc.installPackage('matem.policy')
 
 # The order here is important: We first call the (deferred) function
 # which installs the products we need for the matem package.
 # Then, we let PloneTestCase set up this product on installation.
 setup_matem_policy()
-ptc.setupPloneSite(products=['Collage',
-                             'matem.policy'])
+ptc.setupPloneSite(products=['matem.policy'])
 
 
 class TestCase(ptc.PloneTestCase):
