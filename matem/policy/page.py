@@ -7,7 +7,6 @@ from plone.autoform import directives as form
 from plone.supermodel import model
 from zope import schema
 
-
 class IPage(model.Schema):
     """A folder for Seminars.
     """
