@@ -25,6 +25,7 @@ setup(name='matem.policy',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.dexterity',
           'Products.Collage',
       ],
       entry_points="""
